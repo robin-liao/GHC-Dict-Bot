@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0",
+  "id": "1cd9a699-16b4-4efd-bcaa-b001b15bcfa1",
+  "packageName": "com.skype.teams.samples.mushroom",
+  "developer": {
+    "name": "GHC Bot Developer",
+    "websiteUrl": "https://website.com/",
+    "privacyUrl": "https://website.com/privacy",
+    "termsOfUseUrl": "https://website.com/app-tos"
+  },
+  "name": {
+    "short": "GHC Dictionary Bot",
+    "full": "Dictionary Bot for Grasshopper Conference 2020"
+  },
+  "description": {
+    "short": "Demo app for dictionary bot",
+    "full": "Demo app for dictionary bot used in the workshop of Grasshopper Conference 2020"
+  },
+  "icons": {
+    "outline": "icon.png",
+    "color": "icon.png"
+  },
+  "accentColor": "#520329",
+  "bots": [
+    {
+      "botId": "%MICROSOFT-APP-ID-REGISTERED-WITH-BOT-FRAMEWORK%",
+      "scopes": ["personal", "team", "groupchat"],
+      "commandLists": []
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["*.azurewebsites.net", "*.ngrok.io"]
+}
